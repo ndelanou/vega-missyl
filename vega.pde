@@ -32,7 +32,7 @@ void draw() {
   }
  
   checkHits();
-  println("score: ", scoreLeftTeam, " - " , scoreRightTeam);
+  // println("score: ", scoreLeftTeam, " - " , scoreRightTeam);
   updateHUD();
 }
  
@@ -56,6 +56,9 @@ void mousePressed() {
  
 void updateHUD() {
   line(600, 0, 600, 800);
+
+  text(scoreLeftTeam, 580, 20);
+  text(scoreRightTeam, 620, 20);
 }
  
 void renderBullets() {
